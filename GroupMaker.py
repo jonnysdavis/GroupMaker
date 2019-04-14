@@ -24,7 +24,15 @@ if __name__ == "__main__":
             studentsNeedingGroup.remove(person)
         else:
             currentGroupSize = groups[count-1].count(',')
-            randomNumber = random.randInt(0, len(studentsNeedingGroup))
+
+            #Only add student to a group if they are not already in one
+            randomStudentNew = False
+            while(randomStudentNew is False)
+                randomNumber = random.randInt(0, len(studentsNeedingGroup))
+                if(groups.count(studentsNeedingGroup[randomNumber]) > 0):
+                    randomStudentNew = False
+                else:
+                    randomStudentNew = True
 
 
             randomStudent = studentsNeedingGroup[randomNumber]
